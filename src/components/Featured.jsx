@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 //const Carousel = require("@material-tailwind/react/utils/withMT");
 const Featured = () => {
     return (
-        <div className="py-32 w-full mx-auto">
+        <div className="py-32 w-full mx-auto bg-background-1">
             {/* <Container>
                 <div className="text-5xl font-semibold">Exclusive Listing</div>
                 <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -36,9 +36,10 @@ const Featured = () => {
                 </div>
                 <Button classes="mt-10">Browse More Property</Button>
             </Container> */}
-            <Container>
+            {/* <Container> */}
+            <div className="px-10 mx-auto w-full h-full">
                 <div className="text-5xl font-semibold">Property Listing</div>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-20 gap-4 lg:gap-14">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 mt-20 gap-4 lg:gap-14 ">
                     {housesData.map((pr, i) => (
                         // <Link to={`/property/${pr.id}`} key={i}>
                         <div key={i} className=" bg-white shadow rounded-lg rounded-tl-[90px] w-full max-w-[352px] mx-auto cursor-pointer hover:shadow-2xl tansition p-5">
@@ -86,7 +87,8 @@ const Featured = () => {
                         // </Link>
                     ))}
                 </div>
-            </Container>
+            </div>
+            {/* </Container> */}
         </div>
     )
 }
